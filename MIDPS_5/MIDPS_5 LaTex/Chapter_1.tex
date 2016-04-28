@@ -1,0 +1,66 @@
+\section{Laboratory work implementation}
+
+\subsection{Tasks and Points}
+\begin{itemize}
+	\item Basic Level (nota 5 || 6):
+	
+	\begin{itemize}
+		\item Realizeaza o aplicatie simpla "Hello world" care va contine 2 butoane care vor afisa 2 pagini diferite, folosing 2 elemente diferite de interactiune.
+	\end{itemize}
+	
+	\item Normal Level (nota 7 || 8):
+	
+	\begin{itemize}
+		\item Implimenteaza un simplu ceas sau stopwatch.
+	\end{itemize}
+	\item Advanced Level (nota 9 || 10):
+	
+	\begin{itemize}
+		\item Realizeaza o aplicatie care va implimenta tehnica Pomodoro SAU
+    	\item O alta aplicatie sofisticata la alegere
+        \item Game
+	\end{itemize}
+	\item Bonus Point:
+	\begin{itemize}
+		\item Foloseste libraria cross platform pentru a realiza o apliacatie cross platform (aplicatia poate fi compilata atit pe Android, cit si pe iOS).
+	\end{itemize}
+\end{itemize}
+    
+
+
+
+\subsection{Analiza lucrarii de laborator}
+
+Linkul la repozitorul Github:\\
+\begin{center}
+\url{https://github.com/MihaiCapra/MIDPS}
+\end{center}
+
+Am realizat applicatia mobilă in Unity.Unity este un Motor pentru Jocuri de tip Cross-platform dezvoltat de către Unity Tehnologies folosit pentru dezvoltarea jocurilor pentru PC,Console,Telefoane Mobile si Applicatii Web.Prima dată a fost prezentat la Apple Worldwide Developers Conference în 2005.Este dezvoltat in limbajele de programare C,C++ și C\# .Pentru realizarea jocurilor sunt utilizate limbajele de programare C\# ,Javascript și Boo.
+\begin{center}
+\includegraphics[scale=0.5]{images/Main}
+\end{center}
+In imaginea de mai sus avem mai multe elmente:Game(vizualizarea scenelor finale,testarea jocurilor),Scene(aici implimentam design-ul jocului,amplasăm obiectele importate din editoare grafiece cum ar fi:Blender,3DS Max si altele,putem utiliza si obiecte primitive din Unity),Project(aici amplasam codurile,obiectele grafice in directoriile respective pentru a amenaja proectul),Inspector(este fereastra cu instructiuni pentru obiecte cum ar fi:amplasarea,rotirea etc)si Herarchy(sunt obiectele utilizate in scena curentă).\\
+
+Pentru a realiza aceast joc am utilizat o serie de Cuburi din Unity care se vor schimba de pe ultima pozitie pe prima cind apasam pe ecran sau cu mouse-ul,la fel am implimentat fizica pentru aceste obiecte prin atribuirea proprietati RigidBody pentru toate obiectele din Stack.Care au 4 culori care se interschimba intre ele.La fel la fiecare pas cind apasam Stiva de cuburi se mută pe axa y mai jos pentru a mentine obiectele in pătratul obiectului MainCamera.Am utilizat si un Canvas cu Textul care raspunde de Scorul din joc.
+
+\begin{center}
+\includegraphics[scale=0.5]{images/TheStack}
+\end{center}
+In procesul de dezvoltare a jocului putem utiliza butonul play din partea de sus pentru a testa ce am ralizat.
+\begin{center}
+\includegraphics[scale=0.5]{images/Play}
+\end{center}
+\subsection{Imagini}
+Am implementat si Meniul GameOver si pagina de start a jocului.
+In meniul GameOver sunt două butoane (unul raspunde de Repornirea jocului și al doilea pentru a schimba scena din joc la meniul principal unde este doar un Text cu numele jocului si un buton care porneste jocul).
+\begin{center}
+\includegraphics[scale=0.5]{images/GameOver}\\
+\includegraphics[scale=0.5]{images/Menu}\\
+\end{center}
+Doarece am utilizat Unity avem posibilitatea de a porta jocul pe platforma dorita doar daca avem instalate componentele necesare pentru platforma dorita ceea ce se numeste(Cross-latform).Pentru acest laborator am portat jocul doar pe platforma android.
+\begin{center}
+\includegraphics[scale=0.5]{images/Build}
+\end{center}
+
+\clearpage
